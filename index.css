@@ -1,0 +1,125 @@
+
+
+ body{
+    margin: 0;
+    padding: 0;
+    font-family:brick;
+    font-weight:lighter;
+}
+@font-face {
+    font-family: brick;
+    src: url('./font/brick-comic-font/BrickComic-6YLdg.otf');
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10% 0%; */
+    width: 100%;
+    text-align: center;
+    color: #13CDCD;
+    overflow: hidden;
+    position: relative;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 40%;
+    height: auto;
+
+    border: 5px solid #13CDCD;
+    padding: 2%;
+    /* background-color: #61F7AC ; */
+    background-color:#61F7F7 ;
+  }
+  
+  .grid-item {
+    background-color: #13CDCD ;
+    color: white;
+    margin: 2%;
+    padding: 20%;
+    font-size: 20px;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  
+  .grid-item:hover {
+    cursor: pointer;
+  }
+
+  .data_container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  
+ .data{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    /* padding: 2% 50%; */
+    padding-top: 2%;
+    /* background: #000; */
+ }
+ .data > h2{
+    margin: 0% 10%;
+    width: max-content;
+ }
+#history{
+   padding: 2% 10%;
+}
+
+.moves{
+   margin-left: 10px;
+}
+
+ .buttons {
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+ button{
+    margin: 5% 10%;
+    padding: 2%;
+    font-size: 2rem;
+    border-radius: 20px;
+    border: none;
+    font-family: brick;
+    background-color: #13CDCD;
+    color: white;
+    cursor: pointer;
+ }
+ .modal{
+   display: none;
+   z-index: 100;
+   position: absolute;
+   top: 30%;
+   left: 37%;
+   background-color: white;
+   padding: 05%;
+   border-radius: 5%;
+   
+ }
+ .modal-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   font-size: 2rem;
+   display: hidden;
+   color: #13CDCD;
+ }
+
+ 

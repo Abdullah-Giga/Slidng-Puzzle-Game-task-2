@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Sliding Puzzle</title>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>Sliding Puzzle</h1>
+    <div class="grid-container" id="g1">
+        <div class="grid-item" id="item1"></div>
+        <div class="grid-item" id="item2"></div>
+        <div class="grid-item" id="item3"></div>
+        <div class="grid-item" id="item4"></div>
+        <div class="grid-item" id="item5"></div>
+        <div class="grid-item" id="item6"></div>
+        <div class="grid-item" id="item7"></div>
+        <div class="grid-item" id="item8"></div>
+        <div class="grid-item" id="item9"></div>
+      </div>
+      <div class="data_container">
+        <div class="data">
+            <h2>Moves:<span id="moves">0</span></h2>
+            <h2>Time:<span id="time">
+                <label id="minutes">00</label>
+                <label id="colon">:</label>
+                <label id="seconds">00</label>
+            </span></h2>
+            <h2>Round:<span id="r_no">1</span></h2>
+        </div>
+        <div class="his"><p>Previous round history</p></div>
+        <div class="data" id="history">
+            
+        </div>
+        <div class="buttons">
+            <button id="new">New Game</button>
+            <!-- <button id="end">Quit</button> -->
+            <button id="continue">Quit</button>
+        </div>
+      </div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <p>Congrats You Won!!</p>
+          <button id="md_btn">Contnue</button>
+        </div>
+    </div>
+</div>
+    <script src="./jquery/jquery-3.6.1.min.js"></script>
+    <Script src="./index.js"></Script>
+</body>
+</html>
+
