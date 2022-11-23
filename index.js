@@ -226,7 +226,7 @@ const win = () => {
   if (won == true) {
     // win_count++;
     modal.style.display = "block";
-    alert("You Win");
+    // alert("You Win");
   }
 };
 
@@ -253,13 +253,16 @@ const getData = () => {
 
 mdb.addEventListener("click", () => {
   modal.style.display = "none";
+  r_count++;
+  store();
   totalSeconds = 0;
-  minutesLabel.innerHTML = 00;
-  secondsLabel.innerHTML = 00;
+  secondsLabel.innerHTML = 0;
+  minutesLabel.innerHTML = 0;
   count = 0;
-  moves.innerHTML = 0;
-  randomize();
+  moves.innerHTML = count;
   history.innerHTML = getData();
+  randomize();
+  
 })
 
 
@@ -276,7 +279,7 @@ new_btn.addEventListener("click", () => {
 
   count = 0;
   moves.innerHTML = count;
-  history.innerHTML = getData();
+
 
 });
 
