@@ -276,7 +276,7 @@ new_btn.addEventListener("click", () => {
   secondsLabel.innerHTML = 0;
   minutesLabel.innerHTML = 0;
   round.innerHTML = r_count;
-
+  history.innerHTML = getData();
   count = 0;
   moves.innerHTML = count;
 
