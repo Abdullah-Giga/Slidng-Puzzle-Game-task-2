@@ -14,7 +14,7 @@ let count = 0;
 
 
 //populatng the divs with numbers
-for (let i = 1; i <= 3 * 3; i++) blocks.push(i);
+for (let i = 1; i <= 9; i++) blocks.push(i);
 
 function random_handler(array) {
   let tmp,
@@ -23,9 +23,7 @@ function random_handler(array) {
   if (n)
     while (--n) {
       current = Math.floor(Math.random() * (n + 1));
-
       tmp = array[current];
-
       array[current] = array[n];
       array[n] = tmp;
     }
@@ -87,7 +85,7 @@ HandleClickInput();
 
 
 // Timer
-//
+
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");
 var totalSeconds = 0;
@@ -111,7 +109,7 @@ function pad(val) {
 
 
 
-// Keyboard \
+// Keyboard input handlers
 
 
 const up_value = () => {
@@ -210,7 +208,7 @@ function keyPress(e) {
 
 Key_Input();
 
-
+// This function will display a modal upon winning the game
 
 const win = () => {
   let won = false;
@@ -224,9 +222,7 @@ const win = () => {
     }
   }
   if (won == true) {
-    // win_count++;
     modal.style.display = "block";
-    // alert("You Win");
   }
 };
 
